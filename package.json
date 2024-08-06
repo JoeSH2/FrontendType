@@ -48,7 +48,7 @@
   "author": "JoeSH2 <foremansh2@mail.ru>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^9.8.0",
+    "eslint": "^8.57.0",
     "eslint-config-react-app": "^7.0.1",
     "prettier": "3.3.3",
     "stylelint": "^16.8.1",
