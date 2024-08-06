@@ -1,0 +1,23 @@
+.GeneratorTask {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 80px;
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &:before {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    background-color: darkslategrey;
+    height: 2px;
+    width: 15%;
+    border-radius: 2rem;
+  }
+}

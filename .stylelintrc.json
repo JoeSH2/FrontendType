@@ -1,0 +1,18 @@
+{
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "no-duplicate-selectors": true,
+    "color-named": "always-where-possible",
+    "property-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "function-url-quotes": "always",
+    "font-family-name-quotes": "always-where-recommended",
+    "comment-whitespace-inside": "always",
+    "comment-empty-line-before": "always",
+    "at-rule-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "declaration-empty-line-before": "never",
+    "block-no-empty": true
+  }
+}

@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import { Header } from '../../widgets/Header'
+import { Footer } from '../../widgets/Footer'
+import { Webrapper } from '../../shared/ui/Webrapper/Webrapper'
+import { GeneratorTask } from '../../entities/GeneratorTask'
+import { TextComparison } from '../../features/TextComparison'
+import { Provider } from 'react-redux'
+import { store } from '../store/store'
+import jsonTasks from '../../tasks.json'
+import { ListWPM } from '../../entities/CardWPM'
+import { CalculateWPM } from '../../features/CalculateWPM'
 
 function App() {
+  const dataTasks: string[] = jsonTasks
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <div className="App">
+        <Header />
+        <Webrapper>
+          <GeneratorTask numberOfTasks={dataTasks.length} />
+          <TextComparison arrTasks={dataTasks} />
+          <CalculateWPM />
+        </Webrapper>
+        <Footer />
+      </div>
+    </Provider>
+  )
 }
 
-export default App;
+export default App

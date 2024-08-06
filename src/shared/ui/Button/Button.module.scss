@@ -1,0 +1,31 @@
+.Button {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: darkslategrey;
+  text-transform: uppercase;
+  color: azure;
+  padding: 1rem 2.5rem;
+  transition: background-color 0.2s ease;
+  border-radius: 2px;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: #417e7e;
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    transition: top 0.2s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      top: 0;
+    }
+  }
+}

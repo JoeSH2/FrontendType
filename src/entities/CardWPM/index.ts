@@ -1,1 +1,2 @@
-export { InfoWPM } from './ui/InfoWPM'
+export { CardWPM } from './ui/CardWPM/CardWPM'
+export { ListWPM } from './ui/ListWPM/ListWPM'

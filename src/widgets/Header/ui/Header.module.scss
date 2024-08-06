@@ -1,0 +1,17 @@
+.Header {
+  height: 80px;
+  background-color: darkslategrey;
+  color: azure;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: cyan;
+  }
+}
