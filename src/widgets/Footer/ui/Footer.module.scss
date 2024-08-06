@@ -1,0 +1,18 @@
+.Header {
+  background-color: darkslategrey;
+  color: azure;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: cyan;
+  }
+}
+.user {
+  gap: 10px;
+}
