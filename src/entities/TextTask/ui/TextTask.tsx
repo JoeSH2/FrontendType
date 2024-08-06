@@ -2,14 +2,16 @@ import React, { FC, memo, useEffect, useState } from 'react'
 import style from './TextTask.module.scss'
 import { useAppDispatch } from '../../../shared/lib/hooks'
 import { textComparisonActions } from '../../../features/TextComparison/model/slice/textComparisonSlice'
+import { cls } from '../../../shared/lib/cls'
 
 interface TextTaskProps {
   userText: string
   task: string
+  isPrint: boolean
 }
 
 export const TextTask: FC<TextTaskProps> = memo((props) => {
-  const { task, userText } = props
+  const { task, userText, isPrint } = props
   const dispatch = useAppDispatch()
   const [words, setWords] = useState(0)
 
@@ -30,5 +32,9 @@ export const TextTask: FC<TextTaskProps> = memo((props) => {
     setWords(task.split(' ').length)
     dispatch(textComparisonActions.getWordTask(words))
   }, [task, setWords, words])
-  return <div className={style.TextTask}>{arraySymbolTask}</div>
+  return (
+    <div className={cls(style.TextTask, { [style.active]: isPrint }, [])}>
+      {arraySymbolTask}
+    </div>
+  )
 })

@@ -55,7 +55,7 @@ export const TextComparison: FC<TextComparisonProps> = ({ arrTasks }) => {
 
   return (
     <section className={style.TextComparison}>
-      <TextTask userText={value} task={textTask} />
+      <TextTask isPrint={Boolean(value)} userText={value} task={textTask} />
       <InputTask value={value} onChange={onChangeValue} />
     </section>
   )
