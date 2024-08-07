@@ -8,10 +8,10 @@ export const Footer: FC = () => {
       <Container>
         <div className={style.wrapper}>
           <h1>Footer</h1>
-          <div className={style.user}>
-            Info
-            <p>Danila Kuzin, TG: @dksspkuz</p>
-          </div>
+          <ul className={style.user}>
+            <li>Danila Kuzin</li>
+            <li>TG: @dksspkuz</li>
+          </ul>
         </div>
       </Container>
     </footer>

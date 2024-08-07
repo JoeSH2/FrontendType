@@ -15,8 +15,8 @@
   line-height: 2;
   transition: color 0.2s ease-out;
 
-  @media screen and (max-width: 420px) {
-    font-size: 14px;
+  @media screen and (max-width: 430px) {
+    font-size: 16px;
   }
 }
 .active {
@@ -37,4 +37,7 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+}
+.word {
+  padding-right: 5px;
 }

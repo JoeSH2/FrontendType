@@ -9,7 +9,7 @@ export const CalculateWPM: FC = () => {
   const { infoTask, Wpm, errors, finishTime } = useAppSelector(
     (state) => state.calculateWPM
   )
-  console.log(errors)
+
   useEffect(() => {
     if (finishTime !== 0) {
       dispatch(

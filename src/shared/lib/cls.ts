@@ -1,10 +1,5 @@
 type objClasses = Record<string, boolean | string | undefined>
 
-interface clsProps {
-  arrClasses: Array<string | undefined>
-  className: string
-}
-
 export const cls = (
   className: string,
   objectClasses: objClasses,

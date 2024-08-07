@@ -20,8 +20,8 @@ export const TextComparison: FC<TextComparisonProps> = ({ arrTasks }) => {
   const calculate = (value: string) => {
     if (value.length === 1) {
       dispatch(CalculateWPMActions.getStartTime(Math.floor(Date.now() / 1000)))
-    } else if (value.length > 1 && value.length < textTask.length) {
-    } else if (value.length === textTask.length) {
+    }
+    if (value.length >= textTask.length) {
       dispatch(CalculateWPMActions.getFinishTime(Math.floor(Date.now() / 1000)))
       dispatch(CalculateWPMActions.calculateWPM(wordTask))
     }

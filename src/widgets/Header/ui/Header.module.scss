@@ -13,5 +13,13 @@
     font-size: 22px;
     font-weight: bold;
     color: cyan;
+    @media screen and (max-width: 430px) {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  p {
+    font-size: 14px;
   }
 }

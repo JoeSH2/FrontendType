@@ -8,7 +8,10 @@ export const Header: FC = () => {
       <Container>
         <div className={style.wrapper}>
           <h1>FRONTENDTYPE</h1>
-          <p>Danila Kuzin, TG: @dksspkuz</p>
+          <ul>
+            <li>Danila Kuzin</li>
+            <li>TG: @dksspkuz</li>
+          </ul>
         </div>
       </Container>
     </header>
